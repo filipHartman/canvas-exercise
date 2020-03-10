@@ -10,7 +10,7 @@ let y =
 let dx = (Math.random() - 0.5) * 20;
 let dy = (Math.random() - 0.5) * 20;
 
-setupCanvas = () => {
+const setupCanvas = () => {
   canvas = document.querySelector('canvas');
   canvas.width = window.innerWidth;
   canvas.height = window.innerHeight;
@@ -20,13 +20,13 @@ setupCanvas = () => {
   }
 };
 
-animate = () => {
+const animate = () => {
   requestAnimationFrame(animate);
   ctx.clearRect(0, 0, innerWidth, innerHeight);
   update(ctx);
 };
 
-update = context => {
+const update = context => {
   if (x + radius > innerWidth || x - radius < 0) {
     dx = -dx;
   }
@@ -79,7 +79,7 @@ document.onmouseup = () => {
   console.log(tanA);
 };
 
-onMouseMove = event => {
+const onMouseMove = event => {
   ctx.clearRect(0, 0, innerWidth, innerHeight);
   point.x = event.clientX;
   point.y = event.clientY;
@@ -88,7 +88,7 @@ onMouseMove = event => {
   drawLine(event.clientX, event.clientY);
 };
 
-drawLine = (x, y) => {
+const drawLine = (x, y) => {
   ctx.beginPath();
   ctx.moveTo(startingPoint.x, startingPoint.y);
   ctx.lineTo(x, y);
