@@ -1,0 +1,21 @@
+{
+  "name": "canvas-exercise",
+  "version": "1.0.0",
+  "description": "",
+  "main": "point.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filipHartman/canvas-exercise.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/filipHartman/canvas-exercise/issues"
+  },
+  "homepage": "https://github.com/filipHartman/canvas-exercise#readme"
+}
